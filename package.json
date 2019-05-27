@@ -1,0 +1,29 @@
+{
+  "name": "my-paint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "5.13.0",
+    "webpack": "4.32.2",
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "3.4.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --open",
+    "eslint": "eslint src/**/*.js",
+    "test": "npm run eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RDemian/my-paint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RDemian/my-paint/issues"
+  },
+  "homepage": "https://github.com/RDemian/my-paint#readme"
+}
