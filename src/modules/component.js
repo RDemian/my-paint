@@ -1,5 +1,6 @@
 import createDomElement from './create-dom-element';
 
+let instanceCounter = 0;
 class Component {
     constructor(data) {
         if (new.target === Component) {
@@ -16,7 +17,11 @@ class Component {
         throw new Error('Шаблон не определен, определяется в наследниках класса!');
     }
 
+    _init() {}
+
     render() {
+        instanceCounter += 1;
+        this._init();
         this._element = createDomElement(this.template);
         this.bind();
         return this._element;

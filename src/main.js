@@ -3,13 +3,12 @@ import Paint from './modules/paint'
 const container = document.querySelector('.container');
 
 const instancePaint = new Paint();
-console.log(instancePaint);
 
 const domChild = instancePaint.render();
 
-console.log(domChild);
-
 container.appendChild(domChild);
+
+
 /*
 const canvas = document.querySelector('#id-canvas');
 const context = canvas.getContext('2d');

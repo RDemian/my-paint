@@ -1,16 +1,16 @@
-.canvas {
+.paint__canvas {
     outline: 1px solid darkolivegreen;
     cursor: crosshair;
 }
 
-.col {
+.paint__col {
     outline: 1px solid salmon;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.row {
+.paint__row {
     display: flex;
     align-items: center;
 }
